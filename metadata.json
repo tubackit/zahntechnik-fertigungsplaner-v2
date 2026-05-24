@@ -1,0 +1,5 @@
+{
+  "name": "Zahntechnik Fertigungsplaner",
+  "description": "Ein Generator für Fertigungsabschnitte in der Zahntechnik zur Planung von Produktionsschritten für Kronen, Prothesen und mehr.",
+  "requestFramePermissions": []
+}
