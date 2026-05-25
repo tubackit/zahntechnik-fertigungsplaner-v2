@@ -232,6 +232,170 @@ const InlayIcon = () => (
   </svg>
 );
 
+const BarDentureIcon = () => (
+  <svg viewBox="0 0 200 200" width="1.2em" height="1.2em" className="inline-block drop-shadow-md">
+    <defs>
+      <linearGradient id="stegBarGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stopColor="#cfd8dc" />
+        <stop offset="30%" stopColor="#eceff1" />
+        <stop offset="70%" stopColor="#b0bec5" />
+        <stop offset="100%" stopColor="#78909c" />
+      </linearGradient>
+      <linearGradient id="stegGoldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stopColor="#ffd54f" />
+        <stop offset="50%" stopColor="#ffb300" />
+        <stop offset="100%" stopColor="#ff8f00" />
+      </linearGradient>
+      <linearGradient id="stegGumGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stopColor="#ff8a80" />
+        <stop offset="100%" stopColor="#e53935" />
+      </linearGradient>
+      <linearGradient id="stegLowerGumGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stopColor="#ffab91" />
+        <stop offset="100%" stopColor="#d84315" />
+      </linearGradient>
+      <linearGradient id="stegToothGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stopColor="#ffffff" />
+        <stop offset="100%" stopColor="#ededed" />
+      </linearGradient>
+      <linearGradient id="stegImplantGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stopColor="#90a4ae" />
+        <stop offset="50%" stopColor="#eceff1" />
+        <stop offset="100%" stopColor="#546e7a" />
+      </linearGradient>
+    </defs>
+
+    {/* Upper Overdenture Set (Teeth and Gums) */}
+    {/* Coral Pink Gum Base for the denture */}
+    <path 
+      d="M 25 75 
+         C 40 55, 160 55, 175 75 
+         C 175 88, 160 85, 145 80 
+         C 130 75, 70 75, 55 80 
+         C 40 85, 25 88, 25 75 Z" 
+      fill="url(#stegGumGrad)" 
+      stroke="#c62828" 
+      strokeWidth="1.2" 
+    />
+
+    {/* Elegant White Teeth Set on the denture */}
+    {/* Left molars/premolar */}
+    <path d="M 32 73 C 32 90, 44 90, 44 73 Z" fill="url(#stegToothGrad)" stroke="#37474f" strokeWidth="1" />
+    <path d="M 46 75 C 46 92, 58 92, 58 75 Z" fill="url(#stegToothGrad)" stroke="#37474f" strokeWidth="1" />
+    
+    {/* Left Canine */}
+    <path d="M 60 76 C 60 95, 72 95, 72 76 C 72 76, 66 98, 60 76 Z" fill="url(#stegToothGrad)" stroke="#37474f" strokeWidth="1" />
+    
+    {/* Incisors (Front teeth) */}
+    <path d="M 74 77 C 74 98, 87 98, 87 77 Z" fill="url(#stegToothGrad)" stroke="#37474f" strokeWidth="1" />
+    <path d="M 89 77 C 89 98, 102 98, 102 77 Z" fill="url(#stegToothGrad)" stroke="#37474f" strokeWidth="1" />
+    <path d="M 104 77 C 104 98, 117 98, 117 77 Z" fill="url(#stegToothGrad)" stroke="#37474f" strokeWidth="1" />
+    <path d="M 119 77 C 119 98, 132 98, 132 77 Z" fill="url(#stegToothGrad)" stroke="#37474f" strokeWidth="1" />
+
+    {/* Right Canine */}
+    <path d="M 134 76 C 134 95, 146 95, 146 76 C 146 76, 140 98, 134 76 Z" fill="url(#stegToothGrad)" stroke="#37474f" strokeWidth="1" />
+    
+    {/* Right molars/premolar */}
+    <path d="M 148 75 C 148 92, 160 92, 160 75 Z" fill="url(#stegToothGrad)" stroke="#37474f" strokeWidth="1" />
+    <path d="M 162 73 C 162 90, 174 90, 174 73 Z" fill="url(#stegToothGrad)" stroke="#37474f" strokeWidth="1" />
+
+    {/* Lower Bone/Gum Base at the bottom */}
+    <path 
+      d="M 20 170 
+         C 40 185, 160 185, 180 170 
+         C 180 152, 160 148, 140 146
+         C 120 144, 80 144, 60 146 
+         C 40 148, 20 152, 20 170 Z" 
+      fill="url(#stegLowerGumGrad)" 
+      stroke="#bf360c" 
+      strokeWidth="1.5" 
+    />
+
+    {/* Four Implants coming out of the bone */}
+    {/* Implant 1 (Far Left) */}
+    <g transform="translate(42, 138)">
+      <rect x="0" y="0" width="10" height="24" rx="2" fill="url(#stegImplantGrad)" stroke="#37474f" strokeWidth="1.2" />
+      <line x1="1" y1="5" x2="9" y2="5" stroke="#37474f" strokeWidth="1.2" />
+      <line x1="1" y1="9" x2="9" y2="9" stroke="#37474f" strokeWidth="1.2" />
+      <line x1="1" y1="13" x2="9" y2="13" stroke="#37474f" strokeWidth="1.2" />
+      <line x1="1" y1="17" x2="9" y2="17" stroke="#37474f" strokeWidth="1.2" />
+      <line x1="1" y1="21" x2="9" y2="21" stroke="#37474f" strokeWidth="1.2" />
+      <ellipse cx="5" cy="0" rx="6" ry="3" fill="url(#stegGoldGrad)" stroke="#ff6f00" strokeWidth="0.8" />
+    </g>
+
+    {/* Implant 2 (Center Left) */}
+    <g transform="translate(78, 135)">
+      <rect x="0" y="0" width="10" height="24" rx="2" fill="url(#stegImplantGrad)" stroke="#37474f" strokeWidth="1.2" />
+      <line x1="1" y1="5" x2="9" y2="5" stroke="#37474f" strokeWidth="1.2" />
+      <line x1="1" y1="9" x2="9" y2="9" stroke="#37474f" strokeWidth="1.2" />
+      <line x1="1" y1="13" x2="9" y2="13" stroke="#37474f" strokeWidth="1.2" />
+      <line x1="1" y1="17" x2="9" y2="17" stroke="#37474f" strokeWidth="1.2" />
+      <line x1="1" y1="21" x2="9" y2="21" stroke="#37474f" strokeWidth="1.2" />
+      <ellipse cx="5" cy="0" rx="6" ry="3" fill="url(#stegGoldGrad)" stroke="#ff6f00" strokeWidth="0.8" />
+    </g>
+
+    {/* Implant 3 (Center Right) */}
+    <g transform="translate(112, 135)">
+      <rect x="0" y="0" width="10" height="24" rx="2" fill="url(#stegImplantGrad)" stroke="#37474f" strokeWidth="1.2" />
+      <line x1="1" y1="5" x2="9" y2="5" stroke="#37474f" strokeWidth="1.2" />
+      <line x1="1" y1="9" x2="9" y2="9" stroke="#37474f" strokeWidth="1.2" />
+      <line x1="1" y1="13" x2="9" y2="13" stroke="#37474f" strokeWidth="1.2" />
+      <line x1="1" y1="17" x2="9" y2="17" stroke="#37474f" strokeWidth="1.2" />
+      <line x1="1" y1="21" x2="9" y2="21" stroke="#37474f" strokeWidth="1.2" />
+      <ellipse cx="5" cy="0" rx="6" ry="3" fill="url(#stegGoldGrad)" stroke="#ff6f00" strokeWidth="0.8" />
+    </g>
+
+    {/* Implant 4 (Far Right) */}
+    <g transform="translate(148, 138)">
+      <rect x="0" y="0" width="10" height="24" rx="2" fill="url(#stegImplantGrad)" stroke="#37474f" strokeWidth="1.2" />
+      <line x1="1" y1="5" x2="9" y2="5" stroke="#37474f" strokeWidth="1.2" />
+      <line x1="1" y1="9" x2="9" y2="9" stroke="#37474f" strokeWidth="1.2" />
+      <line x1="1" y1="13" x2="9" y2="13" stroke="#37474f" strokeWidth="1.2" />
+      <line x1="1" y1="17" x2="9" y2="17" stroke="#37474f" strokeWidth="1.2" />
+      <line x1="1" y1="21" x2="9" y2="21" stroke="#37474f" strokeWidth="1.2" />
+      <ellipse cx="5" cy="0" rx="6" ry="3" fill="url(#stegGoldGrad)" stroke="#ff6f00" strokeWidth="0.8" />
+    </g>
+
+    {/* Horizontal Titanium Bar joining the implants */}
+    <path 
+      d="M 47 137 
+         C 70 128, 130 128, 153 137 
+         C 151 142, 127 135, 97 135
+         C 72 135, 49 142, 47 137 Z" 
+      fill="url(#stegBarGrad)" 
+      stroke="#37474f" 
+      strokeWidth="1.5" 
+    />
+
+    {/* Gold matrix housings / receptors under the upper denture */}
+    <g stroke="#ff6f00" strokeWidth="0.8" fill="url(#stegGoldGrad)">
+      <ellipse cx="47" cy="98" rx="5" ry="2" />
+      <ellipse cx="83" cy="99" rx="5" ry="2" />
+      <ellipse cx="117" cy="99" rx="5" ry="2" />
+      <ellipse cx="153" cy="98" rx="5" ry="2" />
+    </g>
+
+    {/* Insertion Pathways Guidance (arrows pointing downward to bar) */}
+    <g stroke="#455a64" strokeWidth="1.2" fill="none" strokeLinecap="round" strokeLinejoin="round" opacity="0.8">
+      {/* Left Outer Arrow */}
+      <path d="M 47 106 L 47 122" strokeDasharray="2,2" />
+      <path d="M 44 118 L 47 122 L 50 118" />
+
+      {/* Left Center Arrow */}
+      <path d="M 83 107 L 83 121" strokeDasharray="2,2" />
+      <path d="M 80 117 L 83 121 L 86 117" />
+
+      {/* Right Center Arrow */}
+      <path d="M 117 107 L 117 121" strokeDasharray="2,2" />
+      <path d="M 114 117 L 117 121 L 120 117" />
+
+      {/* Right Outer Arrow */}
+      <path d="M 153 106 L 153 122" strokeDasharray="2,2" />
+      <path d="M 150 118 L 153 122 L 156 118" />
+    </g>
+  </svg>
+);
+
 const TelescopeIcon = () => (
   <svg viewBox="0 0 200 200" width="1.2em" height="1.2em" className="inline-block drop-shadow-md">
     <defs>
@@ -585,6 +749,14 @@ const INITIAL_PRODUCTS: Product[] = [
     steps: ['s6', 't1', 't2', 't3', 'c1', 'c2', 'k8']
       .map(id => INITIAL_CATALOG.find(s => s.id === id)!)
       .filter(Boolean)
+  },
+  {
+    id: 'steg-prothese',
+    name: 'Stegprothese',
+    icon: <BarDentureIcon />,
+    steps: ['s6', 's7', 'k8']
+      .map(id => INITIAL_CATALOG.find(s => s.id === id)!)
+      .filter(Boolean)
   }
 ];
 
@@ -810,11 +982,13 @@ export default function App() {
   const [isModellguss, setIsModellguss] = useState(false);
   const [totalProtheseOption, setTotalProtheseOption] = useState<'loeffel' | 'loeffel-biss' | 'anprobe' | 'umstellung' | 'um-fertigstellung' | 'fertigstellung'>('loeffel');
   const [telescopeOption, setTelescopeOption] = useState<'loeffel' | 'loeffel-biss' | 'primaerteile' | 'biss-stuetzstift' | 'gesamtanprobe' | 'umstellung' | 'um-fertigstellung' | 'fertigstellung'>('primaerteile');
+  const [stegOption, setStegOption] = useState<'loeffel' | 'loeffel-biss' | 'biss-stuetzstift' | 'aesthetikanprobe' | 'steg-uebertrag' | 'steg-mg-uebertrag' | 'fertigstellung'>('loeffel');
 
   useEffect(() => {
     setIsEditing(false);
     setIsImplant(false);
     setIsModellguss(false);
+    setStegOption('loeffel');
   }, [selectedProductId]);
 
   const selectedProduct = useMemo(() => 
@@ -1373,7 +1547,132 @@ export default function App() {
         ].filter(Boolean);
       }
     }
-    
+
+    // Handle dynamic steps for Stegprothese
+    if (!isEditing && selectedProductId === 'steg-prothese') {
+      let currentStartTime = new Date(plannerStartTime);
+
+      if (stegOption === 'loeffel') {
+        const modell = { id: 'st-mod', name: 'Modellherstellung', duration: 1440, category: 'manual' as const, description: 'Modellherstellung (1 Tag)' };
+        const loeffel = { id: 'st-loef', name: 'Individueller Löffel', duration: 1440, category: 'manual' as const, description: 'Löffelherstellung (1 Tag)' };
+
+        const mTimes = addWorkingTime(currentStartTime, modell.duration, modell.name);
+        const scheduledModell = { ...modell, stepNumber: 1, startDate: mTimes.start, endDate: mTimes.end };
+        const lTimes = addWorkingTime(scheduledModell.endDate, loeffel.duration, loeffel.name);
+        const scheduledLoeffel = { ...loeffel, stepNumber: 2, startDate: lTimes.start, endDate: lTimes.end };
+
+        return [scheduledModell, scheduledLoeffel];
+
+      } else if (stegOption === 'loeffel-biss') {
+        const modell = { id: 'st-mod', name: 'Modellherstellung', duration: 1440, category: 'manual' as const, description: 'Modellherstellung (1 Tag)' };
+        const loeffel = { id: 'st-loef', name: 'Individueller Löffel', duration: 1440, category: 'manual' as const, description: 'Löffelherstellung (1 Tag)' };
+        const biss = { id: 'st-biss', name: 'Bissschablone', duration: 1440, category: 'manual' as const, description: 'Herstellung Bissschablone (1 Tag)' };
+
+        const mTimes = addWorkingTime(currentStartTime, modell.duration, modell.name);
+        const scheduledModell = { ...modell, stepNumber: 1, startDate: mTimes.start, endDate: mTimes.end };
+        const lTimes = addWorkingTime(scheduledModell.endDate, loeffel.duration, loeffel.name);
+        const scheduledLoeffel = { ...loeffel, stepNumber: 2, startDate: lTimes.start, endDate: lTimes.end };
+        const bTimes = addWorkingTime(scheduledLoeffel.endDate, biss.duration, biss.name);
+        const scheduledBiss = { ...biss, stepNumber: 3, startDate: bTimes.start, endDate: bTimes.end };
+
+        return [scheduledModell, scheduledLoeffel, scheduledBiss];
+
+      } else if (stegOption === 'biss-stuetzstift') {
+        const modell = { id: 'st-mod', name: 'Modellherstellung', duration: 1440, category: 'manual' as const, description: 'Modellherstellung (1 Tag)' };
+        const biss = { id: 'st-biss', name: 'Bissregistrat / Stützstift', duration: 2880, category: 'manual' as const, description: 'Herstellung Bissregistrat oder Stützstiftregistrat (2 Tage)' };
+
+        const mTimes = addWorkingTime(currentStartTime, modell.duration, modell.name);
+        const scheduledModell = { ...modell, stepNumber: 1, startDate: mTimes.start, endDate: mTimes.end };
+        const bTimes = addWorkingTime(scheduledModell.endDate, biss.duration, biss.name);
+        const scheduledBiss = { ...biss, stepNumber: 2, startDate: bTimes.start, endDate: bTimes.end };
+
+        return [scheduledModell, scheduledBiss];
+
+      } else if (stegOption === 'aesthetikanprobe') {
+        const modell = { id: 'st-mod', name: 'Modellherstellung', duration: 1440, category: 'manual' as const, description: 'Modellherstellung (1 Tag)' };
+        const planung = { id: 'st-plan', name: 'ZE-Planung', duration: 1440, category: 'digital' as const, description: 'Zahnersatzplanung (1 Tag)' };
+        const anprobe = { id: 'st-anp', name: 'Ästhetikanprobe', duration: 2880, category: 'manual' as const, description: 'Ästhetikaufstellung in Wachs (2 Tage)' };
+
+        const mTimes = addWorkingTime(currentStartTime, modell.duration, modell.name);
+        const scheduledModell = { ...modell, stepNumber: 1, startDate: mTimes.start, endDate: mTimes.end };
+        const pTimes = addWorkingTime(scheduledModell.endDate, planung.duration, planung.name);
+        const scheduledPlanung = { ...planung, stepNumber: 2, startDate: pTimes.start, endDate: pTimes.end };
+        const aTimes = addWorkingTime(scheduledPlanung.endDate, anprobe.duration, anprobe.name);
+        const scheduledAnprobe = { ...anprobe, stepNumber: 3, startDate: aTimes.start, endDate: aTimes.end };
+
+        return [scheduledModell, scheduledPlanung, scheduledAnprobe];
+
+      } else if (stegOption === 'steg-uebertrag') {
+        const artikulieren = { id: 'st-art', name: 'Artikulieren', duration: 1440, category: 'manual' as const, description: 'Artikulieren (1 Tag)' };
+        const zePlanung = { id: 'st-ze-plan', name: 'zE-Planung', duration: 1440, category: 'digital' as const, description: 'zE-Planung (1 Tag)' };
+        const umstellung = { id: 'st-umst', name: 'Eventuelle Umstellung', duration: 1440, category: 'manual' as const, description: 'Eventuelle Umstellung (1 Tag)' };
+        const fremdf = { id: 'st-fremd', name: 'Steg Fremdfertigung', duration: 10080, category: 'manual' as const, description: 'Steg Fremdfertigung (7 Tage)' };
+        const uebertrag = { id: 'st-auf-ueb', name: 'auf und übertrag', duration: 2880, category: 'manual' as const, description: 'auf und übertrag (2 Tage)' };
+
+        const aTimes = addWorkingTime(currentStartTime, artikulieren.duration, artikulieren.name);
+        const scheduledArtikulieren = { ...artikulieren, stepNumber: 1, startDate: aTimes.start, endDate: aTimes.end };
+        const zTimes = addWorkingTime(scheduledArtikulieren.endDate, zePlanung.duration, zePlanung.name);
+        const scheduledZePlanung = { ...zePlanung, stepNumber: 2, startDate: zTimes.start, endDate: zTimes.end };
+        const uTimes = addWorkingTime(scheduledZePlanung.endDate, umstellung.duration, umstellung.name);
+        const scheduledUmstellung = { ...umstellung, stepNumber: 3, startDate: uTimes.start, endDate: uTimes.end };
+        const fTimes = addWorkingTime(scheduledUmstellung.endDate, fremdf.duration, fremdf.name);
+        const scheduledFremdf = { ...fremdf, stepNumber: 4, startDate: fTimes.start, endDate: fTimes.end };
+        const u2Times = addWorkingTime(scheduledFremdf.endDate, uebertrag.duration, uebertrag.name);
+        const scheduledUebertrag = { ...uebertrag, stepNumber: 5, startDate: u2Times.start, endDate: u2Times.end };
+
+        return [scheduledArtikulieren, scheduledZePlanung, scheduledUmstellung, scheduledFremdf, scheduledUebertrag];
+
+      } else if (stegOption === 'steg-mg-uebertrag') {
+        const artikulieren = { id: 'st-mg-art', name: 'Artikulieren', duration: 1440, category: 'manual' as const, description: 'Artikulieren (1 Tag)' };
+        const zePlanung = { id: 'st-mg-ze-plan', name: 'zE-Planung', duration: 1440, category: 'digital' as const, description: 'zE-Planung (1 Tag)' };
+        const umstellung = { id: 'st-mg-umst', name: 'Eventuelle Umstellung', duration: 1440, category: 'manual' as const, description: 'Eventuelle Umstellung (1 Tag)' };
+        const fremdf = { id: 'st-mg-fremd', name: 'Steg Fremdfertigung', duration: 10080, category: 'manual' as const, description: 'Steg Fremdfertigung (7 Tage)' };
+        const modellguss = { id: 'st-mg-mg', name: 'Modellguss', duration: 2880, category: 'manual' as const, description: 'Modellguss (2 Tage)' };
+        const uebertrag = { id: 'st-mg-auf-ueb', name: 'auf und übertrag', duration: 2880, category: 'manual' as const, description: 'auf und übertrag (2 Tage)' };
+
+        const aTimes = addWorkingTime(currentStartTime, artikulieren.duration, artikulieren.name);
+        const scheduledArtikulieren = { ...artikulieren, stepNumber: 1, startDate: aTimes.start, endDate: aTimes.end };
+        const zTimes = addWorkingTime(scheduledArtikulieren.endDate, zePlanung.duration, zePlanung.name);
+        const scheduledZePlanung = { ...zePlanung, stepNumber: 2, startDate: zTimes.start, endDate: zTimes.end };
+        const uTimes = addWorkingTime(scheduledZePlanung.endDate, umstellung.duration, umstellung.name);
+        const scheduledUmstellung = { ...umstellung, stepNumber: 3, startDate: uTimes.start, endDate: uTimes.end };
+        const fTimes = addWorkingTime(scheduledUmstellung.endDate, fremdf.duration, fremdf.name);
+        const scheduledFremdf = { ...fremdf, stepNumber: 4, startDate: fTimes.start, endDate: fTimes.end };
+        const mTimes = addWorkingTime(scheduledFremdf.endDate, modellguss.duration, modellguss.name);
+        const scheduledModellguss = { ...modellguss, stepNumber: 5, startDate: mTimes.start, endDate: mTimes.end };
+        const u2Times = addWorkingTime(scheduledModellguss.endDate, uebertrag.duration, uebertrag.name);
+        const scheduledUebertrag = { ...uebertrag, stepNumber: 6, startDate: u2Times.start, endDate: u2Times.end };
+
+        return [scheduledArtikulieren, scheduledZePlanung, scheduledUmstellung, scheduledFremdf, scheduledModellguss, scheduledUebertrag];
+
+      } else if (stegOption === 'fertigstellung') {
+        const artikulieren = { id: 'st-f-art', name: 'Artikulieren', duration: 1440, category: 'manual' as const, description: 'Artikulieren (1 Tag)' };
+        const zePlanung = { id: 'st-f-ze-plan', name: 'zE-Planung', duration: 1440, category: 'digital' as const, description: 'zE-Planung (1 Tag)' };
+        const umstellung = { id: 'st-f-umst', name: 'Eventuelle Umstellung', duration: 1440, category: 'manual' as const, description: 'Eventuelle Umstellung (1 Tag)' };
+        const fertigstellung = { id: 'st-f-fert', name: 'Fertigstellung', duration: 2880, category: 'manual' as const, description: 'Fertigstellung (2 Tage)' };
+        const endkontrolle = { id: 'st-f-kontr', name: 'Endkontrolle', duration: 120, category: 'manual' as const, description: 'Endkontrolle' };
+
+        const aTimes = addWorkingTime(currentStartTime, artikulieren.duration, artikulieren.name);
+        const scheduledArtikulieren = { ...artikulieren, stepNumber: 1, startDate: aTimes.start, endDate: aTimes.end };
+        const zTimes = addWorkingTime(scheduledArtikulieren.endDate, zePlanung.duration, zePlanung.name);
+        const scheduledZePlanung = { ...zePlanung, stepNumber: 2, startDate: zTimes.start, endDate: zTimes.end };
+        const uTimes = addWorkingTime(scheduledZePlanung.endDate, umstellung.duration, umstellung.name);
+        const scheduledUmstellung = { ...umstellung, stepNumber: 3, startDate: uTimes.start, endDate: uTimes.end };
+        const fTimes = addWorkingTime(scheduledUmstellung.endDate, fertigstellung.duration, fertigstellung.name);
+        const scheduledFertigstellung = { ...fertigstellung, stepNumber: 4, startDate: fTimes.start, endDate: fTimes.end };
+
+        // Endkontrolle on final day of fertigstellung from 15:00 to 17:00
+        const lastDay = new Date(scheduledFertigstellung.endDate);
+        const kStart = new Date(lastDay);
+        kStart.setHours(15, 0, 0, 0);
+        const kEnd = new Date(lastDay);
+        kEnd.setHours(17, 0, 0, 0);
+        const scheduledEndkontrolle = { ...endkontrolle, stepNumber: 5, startDate: kStart, endDate: kEnd };
+
+        return [scheduledArtikulieren, scheduledZePlanung, scheduledUmstellung, scheduledFertigstellung, scheduledEndkontrolle];
+      }
+    }
+
     // Inject implant steps if applicable
     if (isImplant && (selectedProductId === 'krone-standard' || selectedProductId === 'krone-verblendet')) {
       const modelStepIndex = stepsToSchedule.findIndex(s => s.name === 'Modelle');
@@ -1401,7 +1700,7 @@ export default function App() {
         endDate: end
       };
     });
-  }, [selectedProduct, isEditing, editingSteps, plannerStartTime, isImplant, isVerblendet, isModellguss, totalProtheseOption, telescopeOption, catalog, selectedProductId, products]);
+  }, [selectedProduct, isEditing, editingSteps, plannerStartTime, isImplant, isVerblendet, isModellguss, totalProtheseOption, telescopeOption, stegOption, catalog, selectedProductId, products]);
 
   const totalDuration = useMemo(() => {
     if (!selectedProduct) return 0;
@@ -1484,6 +1783,58 @@ export default function App() {
         ].filter(Boolean);
       }
     }
+
+    // Handle dynamic steps for Stegprothese
+    if (!isEditing && selectedProductId === 'steg-prothese') {
+      if (stegOption === 'loeffel') {
+        steps = [
+          { id: 'st-mod', name: 'Modellherstellung', duration: 1440, category: 'manual' as const, description: 'Modellherstellung' },
+          { id: 'st-loef', name: 'Individueller Löffel', duration: 1440, category: 'manual' as const, description: 'Löffelherstellung' }
+        ];
+      } else if (stegOption === 'loeffel-biss') {
+        steps = [
+          { id: 'st-mod', name: 'Modellherstellung', duration: 1440, category: 'manual' as const, description: 'Modellherstellung' },
+          { id: 'st-loef', name: 'Individueller Löffel', duration: 1440, category: 'manual' as const, description: 'Löffelherstellung' },
+          { id: 'st-biss', name: 'Bissschablone', duration: 1440, category: 'manual' as const, description: 'Herstellung Bissschablone' }
+        ];
+      } else if (stegOption === 'biss-stuetzstift') {
+        steps = [
+          { id: 'st-mod', name: 'Modellherstellung', duration: 1440, category: 'manual' as const, description: 'Modellherstellung' },
+          { id: 'st-biss', name: 'Bissregistrat / Stützstift', duration: 2880, category: 'manual' as const, description: 'Herstellung Bissregistrat oder Stützstiftregistrat' }
+        ];
+      } else if (stegOption === 'aesthetikanprobe') {
+        steps = [
+          { id: 'st-mod', name: 'Modellherstellung', duration: 1440, category: 'manual' as const, description: 'Modellherstellung' },
+          { id: 'st-plan', name: 'ZE-Planung', duration: 1440, category: 'digital' as const, description: 'Zahnersatzplanung' },
+          { id: 'st-anp', name: 'Ästhetikanprobe', duration: 2880, category: 'manual' as const, description: 'Ästhetikaufstellung in Wachs' }
+        ];
+      } else if (stegOption === 'steg-uebertrag') {
+        steps = [
+          { id: 'st-art', name: 'Artikulieren', duration: 1440, category: 'manual' as const, description: 'Artikulieren' },
+          { id: 'st-ze-plan', name: 'zE-Planung', duration: 1440, category: 'digital' as const, description: 'zE-Planung' },
+          { id: 'st-umst', name: 'Eventuelle Umstellung', duration: 1440, category: 'manual' as const, description: 'Eventuelle Umstellung' },
+          { id: 'st-fremd', name: 'Steg Fremdfertigung', duration: 10080, category: 'manual' as const, description: 'Steg Fremdfertigung' },
+          { id: 'st-auf-ueb', name: 'auf und übertrag', duration: 2880, category: 'manual' as const, description: 'auf und übertrag' }
+        ];
+      } else if (stegOption === 'steg-mg-uebertrag') {
+        steps = [
+          { id: 'st-mg-art', name: 'Artikulieren', duration: 1440, category: 'manual' as const, description: 'Artikulieren' },
+          { id: 'st-mg-ze-plan', name: 'zE-Planung', duration: 1440, category: 'digital' as const, description: 'zE-Planung' },
+          { id: 'st-mg-umst', name: 'Eventuelle Umstellung', duration: 1440, category: 'manual' as const, description: 'Eventuelle Umstellung' },
+          { id: 'st-mg-fremd', name: 'Steg Fremdfertigung', duration: 10080, category: 'manual' as const, description: 'Steg Fremdfertigung' },
+          { id: 'st-mg-mg', name: 'Modellguss', duration: 2880, category: 'manual' as const, description: 'Modellguss' },
+          { id: 'st-mg-auf-ueb', name: 'auf und übertrag', duration: 2880, category: 'manual' as const, description: 'auf und übertrag' }
+        ];
+      } else if (stegOption === 'fertigstellung') {
+        steps = [
+          { id: 'st-f-art', name: 'Artikulieren', duration: 1440, category: 'manual' as const, description: 'Artikulieren' },
+          { id: 'st-f-ze-plan', name: 'zE-Planung', duration: 1440, category: 'digital' as const, description: 'zE-Planung' },
+          { id: 'st-f-umst', name: 'Eventuelle Umstellung', duration: 1440, category: 'manual' as const, description: 'Eventuelle Umstellung' },
+          { id: 'st-f-fert', name: 'Fertigstellung', duration: 2880, category: 'manual' as const, description: 'Fertigstellung' },
+          { id: 'st-f-kontr', name: 'Endkontrolle', duration: 120, category: 'manual' as const, description: 'Endkontrolle' }
+        ];
+      }
+    }
     
     // Account for implant steps in duration
     if (isImplant && (selectedProductId === 'krone-standard' || selectedProductId === 'krone-verblendet')) {
@@ -1495,7 +1846,7 @@ export default function App() {
     }
     
     return steps.reduce((acc, step) => acc + step.duration, 0);
-  }, [selectedProduct, isEditing, editingSteps, isImplant, isVerblendet, isModellguss, totalProtheseOption, telescopeOption, catalog, selectedProductId, products]);
+  }, [selectedProduct, isEditing, editingSteps, isImplant, isVerblendet, isModellguss, totalProtheseOption, telescopeOption, stegOption, catalog, selectedProductId, products]);
 
   const deliveryDate = useMemo(() => {
     if (scheduledSteps.length === 0) return null;
@@ -1584,9 +1935,6 @@ export default function App() {
                         <h3 className={`font-semibold ${selectedProductId === product.id ? 'text-blue-600' : 'text-slate-700'}`}>
                           {product.name}
                         </h3>
-                        <p className="text-xs text-slate-400">
-                          {product.steps.length} Arbeitsschritte
-                        </p>
                       </div>
                       <ChevronRight 
                         size={18} 
@@ -1897,6 +2245,89 @@ export default function App() {
                                   onClick={() => setTelescopeOption('fertigstellung')}
                                   className={`px-4 py-1.5 rounded-lg text-xs font-bold transition-all ${
                                     telescopeOption === 'fertigstellung'
+                                      ? 'bg-blue-600 text-white shadow-md' 
+                                      : 'bg-slate-100 text-slate-500 hover:bg-slate-200'
+                                  }`}
+                                >
+                                  Fertigstellung
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        )}
+
+                        {selectedProductId === 'steg-prothese' && (
+                          <div className="flex items-center gap-4 bg-white p-4 rounded-2xl border border-blue-100 shadow-sm w-full md:w-fit">
+                            <div className="p-2 bg-blue-50 rounded-lg text-blue-600 block shrink-0">
+                              <Info size={20} />
+                            </div>
+                            <div className="flex flex-col">
+                              <span className="text-sm font-semibold text-slate-700">Option wählen:</span>
+                              <div className="flex flex-wrap gap-2 mt-2">
+                                <button
+                                  onClick={() => setStegOption('loeffel')}
+                                  className={`px-4 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                                    stegOption === 'loeffel'
+                                      ? 'bg-blue-600 text-white shadow-md' 
+                                      : 'bg-slate-100 text-slate-500 hover:bg-slate-200'
+                                  }`}
+                                >
+                                  Löffel
+                                </button>
+                                <button
+                                  onClick={() => setStegOption('loeffel-biss')}
+                                  className={`px-4 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                                    stegOption === 'loeffel-biss'
+                                      ? 'bg-blue-600 text-white shadow-md' 
+                                      : 'bg-slate-100 text-slate-500 hover:bg-slate-200'
+                                  }`}
+                                >
+                                  Löffel mit Biss
+                                </button>
+                                <button
+                                  onClick={() => setStegOption('biss-stuetzstift')}
+                                  className={`px-4 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                                    stegOption === 'biss-stuetzstift'
+                                      ? 'bg-blue-600 text-white shadow-md' 
+                                      : 'bg-slate-100 text-slate-500 hover:bg-slate-200'
+                                  }`}
+                                >
+                                  Biss oder Stützstift
+                                </button>
+                                <button
+                                  onClick={() => setStegOption('aesthetikanprobe')}
+                                  className={`px-4 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                                    stegOption === 'aesthetikanprobe'
+                                      ? 'bg-blue-600 text-white shadow-md' 
+                                      : 'bg-slate-100 text-slate-500 hover:bg-slate-200'
+                                  }`}
+                                >
+                                  Ästhetikanprobe
+                                </button>
+                                <button
+                                  onClick={() => setStegOption('steg-uebertrag')}
+                                  className={`px-4 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                                    stegOption === 'steg-uebertrag'
+                                      ? 'bg-blue-600 text-white shadow-md' 
+                                      : 'bg-slate-100 text-slate-500 hover:bg-slate-200'
+                                  }`}
+                                >
+                                  Steg mit Übertrag
+                                </button>
+                                <button
+                                  onClick={() => setStegOption('steg-mg-uebertrag')}
+                                  className={`px-4 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                                    stegOption === 'steg-mg-uebertrag'
+                                      ? 'bg-blue-600 text-white shadow-md' 
+                                      : 'bg-slate-100 text-slate-500 hover:bg-slate-200'
+                                  }`}
+                                >
+                                  Steg mit MG und Übertrag
+                                </button>
+                                <button
+                                  onClick={() => setStegOption('fertigstellung')}
+                                  className={`px-4 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                                    stegOption === 'fertigstellung'
                                       ? 'bg-blue-600 text-white shadow-md' 
                                       : 'bg-slate-100 text-slate-500 hover:bg-slate-200'
                                   }`}
